@@ -9,17 +9,170 @@
 </head>
 
 <body>
-    <h1>Brainlab</h1>
+    <!-- Obično sadrži naziv stranice, logo i navigaciju -->
+    <header>
+        <img src="./hajduk.png" alt="Logo Hajduk" width="100">
+        <!-- <ul>
+            <li>
+                <a href="#">Prvi</a>
+            </li>
+            <li>
+                <a href="#">Drugi</a>
+            </li>
+            <li>
+                <a href="#">Treći</a>
+            </li>
+        </ul> -->
+
+        <!-- Bolje je koristit <nav> -->
+        <nav>
+            <a href="#prvi">Prvi</a>
+            <a href="#drugi">Drugi</a>
+            <a href="#treci">Treći</a>
+            <a href="./primjer.html">Primjer</a>
+            <a href="https://hajduk.hr/" target="_blank" rel="noopener noreferrer">Hajduk</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Glavni dio web stranice -->
+    <main>
+        <!-- Tablica -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Frano</td>
+                    <td>Rezo</td>
+                </tr>
+                <tr>
+                    <td>Marin</td>
+                    <td>Zglav</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- <button>Izvan</button> -->
+        <form>
+            <div>
+                <label for="ime">Ime:</label>
+                <input type="text" name="name" id="ime" placeholder="Unesi ime..." required>
+            </div>
+
+            <div>
+                <label for="broj">Broj:</label>
+                <input type="number" name="num" id="broj">
+            </div>
+
+            <div>
+                <label for="lozinka">Lozinka:</label>
+                <input type="password" name="pass" id="lozinka">
+            </div>
+
+            <div>
+                <input type="checkbox" name="oke" id="oznaka">
+                <label for="oznaka">Prihvaćam sva prava korištenja</label>
+            </div>
+
+            <div>
+                <label for="opis">Opis:</label>
+                <textarea name="description" id="opis" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="some">Odaberi:</label>
+                <select name="something" id="some">
+                    <option value="1">Prvi</option>
+                    <option value="2">Drugi</option>
+                    <option value="3">Treći</option>
+                </select>
+            </div>
+
+
+
+            <button type="button">Obični</button>
+            <button type="reset">Odustani</button>
+            <button type="submit">Potvrdi</button>
+        </form>
+
+        <section id="prvi">
+            <h1>Naslov: Moja stranica</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis in dolor non dictum. Quisque eu
+                hendrerit
+                ex. <b>Vivamus neque nunc</b>, vulputate tempor felis in, fermentum facilisis orci. Aliquam nec pulvinar
+                sapien.
+                <i>Nulla</i>
+                venenatis elementum laoreet. <span>Mauris</span> vel enim sed purus efficitur egestas. Cras turpis odio,
+                porta
+                placerat
+                tincidunt in, luctus quis nisi. Quisque porttitor vulputate ex, facilisis rhoncus purus aliquam quis.
+            </p>
+        </section>
+
+        <section id="drugi">
+            <h2>Drugi section</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis in dolor non dictum. Quisque eu
+                hendrerit
+                ex. <b>Vivamus neque nunc</b>, vulputate tempor felis in, fermentum facilisis orci. Aliquam nec pulvinar
+                sapien.
+                <i>Nulla</i>
+                venenatis elementum laoreet. <span>Mauris</span> vel enim sed purus efficitur egestas. Cras turpis odio,
+                porta
+                placerat
+                tincidunt in, luctus quis nisi. Quisque porttitor vulputate ex, facilisis rhoncus purus aliquam quis.
+            </p>
+        </section>
+
+
+        <section id="treci">
+            <h2>Treći section</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis in dolor non dictum. Quisque eu
+                hendrerit
+                ex. <b>Vivamus neque nunc</b>, vulputate tempor felis in, fermentum facilisis orci. Aliquam nec pulvinar
+                sapien.
+                <i>Nulla</i>
+                venenatis elementum laoreet. <span>Mauris</span> vel enim sed purus efficitur egestas. Cras turpis odio,
+                porta
+                placerat
+                tincidunt in, luctus quis nisi. Quisque porttitor vulputate ex, facilisis rhoncus purus aliquam quis.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Obično sadrži informacije o vlasniku, prava korištenja, social media -->
+    <footer>
+        <span>Informacije:</span>
+        <address>
+            <a href="mailto:frano.rezo@brainlab.hr">frano.rezo@brainlab.hr</a><br>
+            <a href="tel:+13115552368">(311) 555-2368</a>
+        </address>
+
+        <!-- Korištenje entiteta -->
+        <small>&copy; Sva prava pridržana &euro;</small>
+    </footer>
+
+    <!-- <h1>Brainlab</h1>
     <h2>Brainlab</h2>
     <h3>Brainlab</h3>
     <h4>Brainlab</h4>
     <h5>Brainlab</h5>
-    <h6>Brainlab</h6>
+    <h6>Brainlab</h6> -->
 
     <!-- <jdsalkjdl>Brainlab</jdsalkjdl> -->
     <!-- Ovaj prethodni nije važeći HTML element -->
 
-    <strong>Hello World</strong>
+    <!-- <strong>Hello World</strong>
 
     <span>Marin</span>
 
@@ -38,9 +191,7 @@
 
     <h1>
         <a href="./primjer.html">Otvori Hajduk</a>
-    </h1>
-
-
+    </h1> -->
 
 </body>
 
